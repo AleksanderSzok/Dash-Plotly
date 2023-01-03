@@ -9,8 +9,8 @@ from dash.dependencies import Input, Output
 
 NUM_RANGES = [-10, 200000, 300000, 400000, 500000, 750000, 1000000, 1500000, 1000000000]
 
-df = pd.read_csv("src/flat_database.csv")
-with open("src/dzielniceWAW.geojson", "r", encoding="utf-8") as read_file:
+df = pd.read_csv("flat_database.csv")
+with open("dzielniceWAW.geojson", "r", encoding="utf-8") as read_file:
     warsaw = json.load(read_file)
 
 app = dash.Dash(
