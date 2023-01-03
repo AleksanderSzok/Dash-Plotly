@@ -162,7 +162,6 @@ app.layout = dbc.Container(
 def update_graph(value, value1, nclicks):
     ctx = dash.callback_context
     input_id = ctx.triggered[0]["prop_id"].split(".")[0]
-
     if input_id == "submit-val" and nclicks % 2 == 1:
         return (
             fig1,
